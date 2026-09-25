@@ -12,13 +12,13 @@ void sound_effect(){
 int main(){
 	
 	int choice;
-	double number;
+	int number;
 	int result;
 	int count = 0;
 	
 	
 	
-  while (1){
+	while (1){
 		
 		printf("\n  Calculator  \n");
         printf("1. +\n");
@@ -57,7 +57,7 @@ int main(){
 			
 			count = count + 1;
 			printf("\nEnter the number %d\n:  ", count);
-			scanf("%lf", &number);
+			scanf("%d", &number);
 			
 			
 			if (number == 0){
@@ -112,6 +112,8 @@ int main(){
 				}
 				break;
 		}
+		
+		
 		
 		printf("\n        \n");
 		printf("\n    Result: %d\n", result);
